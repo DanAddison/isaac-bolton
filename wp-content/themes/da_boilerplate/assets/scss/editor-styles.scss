@@ -1,0 +1,13 @@
+/* 
+* My custom styles for the GB block editor interface 
+* This file is enqueued within gutenberg-settings.php
+*/
+
+.wp-block {
+  max-width: 1000px;
+}
+
+// remove emphasis from the page title
+.editor-post-title__block {
+  opacity: 0.4;
+}
