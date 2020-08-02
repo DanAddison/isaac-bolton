@@ -1,10 +1,10 @@
 <p align="center">
   <a href="">
-    <img alt="" src="wp-content/themes/da_boilerplate/screenshot.png" width="120" />
+    <img alt="" src="wp-content/themes/da_boilerplate/screenshot.png" width="900" />
   </a>
 </p>
 <h1 align="center">
-  DA Boilerplate || for sweeeet WP development
+  DA Boilerplate
 </h1>
 
 ## Description
