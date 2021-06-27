@@ -19,11 +19,13 @@
         ?>
 
         <div class="post-preview post-preview--<?php echo $post_type; ?>">
-            <div class="post-preview__thumbnail"><?php the_post_thumbnail( 'thumbnail' ); ?>
+            <a href="<?php the_permalink(); ?>">
+                <div class="post-preview__image"><?php the_post_thumbnail( 'thumbnail' ); ?>
+            </a>
             </div>
             <div class="post-preview__content">
                 <h4><?php the_title(); ?></h4>
-                <p><?php the_excerpt(); ?></p>
+                <?php the_excerpt(); ?>
             </div>
         </div>
 

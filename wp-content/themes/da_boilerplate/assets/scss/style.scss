@@ -32,7 +32,7 @@ Tags: blocks
 --------------------------------------------------------------*/
 @import "js-modules/responsive-menu";
 @import "js-modules/user-tabbing";
-// @import "js-modules/dropdown-menu";
+@import "js-modules/jquery.fancybox";
 
 /*--------------------------------------------------------------
 # Layout
@@ -49,17 +49,14 @@ Tags: blocks
 @import "components/social-icons";
 // @import "components/pagination";
 // @import "components/widgets";
-// @import "components/comments";
-// @import "components/search-form";
 
 /*--------------------------------------------------------------
 # Blocks
 --------------------------------------------------------------*/
 @import "blocks/core-blocks";
 @import "blocks/block-accordion";
-@import "blocks/block-hero";
-@import "blocks/block-link-card";
-@import "blocks/block-breadcrumb";
+@import "blocks/block-post-preview";
+@import "blocks/block-gallery";
 
 /*--------------------------------------------------------------
 # Vendors: 3rd party libraries

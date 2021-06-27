@@ -30,15 +30,4 @@ wp.domReady( function() {
       name: 'responsive-large',
       label: 'Responsive Large',
     } );
-
-
-    // blacklist specific blocks on client side (better to do with PHP though you have to whitelist instead of blacklist)
-    // wp.blocks.unregisterBlockType( 'core/audio' );
-    // wp.blocks.unregisterBlockType( 'core/cover' );
-    // wp.blocks.unregisterBlockType( 'core/video' );
-    // wp.blocks.unregisterBlockType( 'core/freeform' );
-    // wp.blocks.unregisterBlockType( 'core/nextpage' );
-    // wp.blocks.unregisterBlockType( 'core/latest-posts' );
-    // wp.blocks.unregisterBlockType( 'core/categories' );
-    // wp.blocks.unregisterBlockType( 'core/calendar' );
 } );

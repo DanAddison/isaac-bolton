@@ -88,6 +88,18 @@ function da_boilerplate_register_blocks() {
 			'keywords'			  => array( 'image', 'card', 'link' ),
 			'supports'        => array( 'align' => false ),
 		));
+
+        acf_register_block_type(array(
+			'name'			  	  => 'gallery',
+			'title'				    => __('Gallery'),
+			'description'		  => __('A custom block for displaying images in a lightbox grid'),
+			'render_callback'	=> 'da_boilerplate_acf_block_render_callback',
+			'category'			  => 'da_boilerplate-blocks',
+			'mode'						=> 'edit',
+			'icon'            => array( 'background' => '#e0edee', 'src' => 'list-view' ),
+			'keywords'			  => array( 'image', 'card', 'link' ),
+			'supports'        => array( 'align' => false ),
+		));
 		
 }
 add_action('acf/init', 'da_boilerplate_register_blocks');

@@ -1,0 +1,7 @@
+.block-gallery {
+
+    &__list {
+        @include gridAuto();
+        list-style: none;
+    }
+}

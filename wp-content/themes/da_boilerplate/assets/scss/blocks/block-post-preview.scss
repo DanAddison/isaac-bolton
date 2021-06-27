@@ -9,7 +9,7 @@
 
 .post-preview__image {
   z-index: 1;
-  max-width: 400px;
+  max-width: 150px;
 
   a {
     display: block;
@@ -32,18 +32,10 @@
   min-height: 100%;
   width: 100%;
   padding: 0 1.5em 1.5em;
-}
 
-.post__header {
-  .post__title {
-    margin-top: 0;
-    margin-bottom: 0.2em;
-    font-size: em(32);
-    font-weight: 500;
-    a {
-      text-decoration: none;
-      color: $primary;
-    }
+  h4 {
+      margin-top: 0;
+      margin-bottom: 0.2em;
   }
 }
 
@@ -62,7 +54,7 @@
   .post-preview__image {
     padding-bottom: 0;
     height: auto;
-    width: 35%;
+    width: 25%;
     padding-top: 0;
     padding-left: 0;
   }
