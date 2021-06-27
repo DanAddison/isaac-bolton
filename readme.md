@@ -4,12 +4,12 @@
   </a>
 </p>
 <h1 align="center">
-  DA Boilerplate
+  Isaac Bolton
 </h1>
 
 ## Description
 
-A really awesome starting point for creating bespoke websites.
+A simple portfolio website for an artist.
 
 ## Docs
 

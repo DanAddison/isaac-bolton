@@ -97,7 +97,7 @@ function reload() {
 
 function watch() {
   browserSync.init({
-    proxy: "da-boilerplate.local",
+    proxy: "isaac-bolton.local",
     notify: false
   });
 
