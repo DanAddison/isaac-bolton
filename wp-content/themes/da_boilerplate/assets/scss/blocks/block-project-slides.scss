@@ -1,0 +1,41 @@
+.block-project-slides {
+    margin-left: $spacing*2;
+    width: 95%;
+    max-width: $bp-5;
+    height: 80vh;
+
+    &.owl-carousel {
+
+        .owl-stage-outer {
+            height: 80vh;
+        }
+
+        .owl-stage{
+            display: flex;
+            height: 100%;
+        }
+
+        .owl-item {
+            display: flex;
+            flex: 1 0 auto;
+            height: 100%;
+
+            .block-project-slides__item {
+                width: auto;
+                
+                .block-project-slides__item-wrapper {
+                    overflow: hidden;
+                    height: 100%;
+        
+                    img {
+                        object-fit: contain;
+                        height: 100%;
+                        width: auto;
+                    }
+                }
+            }
+
+        }
+    }
+    
+}
