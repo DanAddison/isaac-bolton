@@ -1,6 +1,5 @@
 jQuery(function($) {
   ResponsiveMenu.init();
-  //DropdownMenu.init();
   //ExpandableAccordion.init()
 
   $(window).resize(function() {
@@ -8,7 +7,6 @@ jQuery(function($) {
     // menu breakpoint
     if ($(window).width() > 999) {
       ResponsiveMenu.closeMenu();
-      // DropdownMenu.closeSubMenus();
     }
   });
 

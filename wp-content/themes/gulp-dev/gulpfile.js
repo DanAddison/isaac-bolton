@@ -25,7 +25,6 @@ var paths = {
       // modules..
       "../da_boilerplate/assets/js/modules/accordion.js",
       "../da_boilerplate/assets/js/modules/cookieConsent.js",
-      "../da_boilerplate/assets/js/modules/fancyboxGallery.js",
       "../da_boilerplate/assets/js/modules/responsiveMenu.js",
       "../da_boilerplate/assets/js/modules/userTabbing.js",
 

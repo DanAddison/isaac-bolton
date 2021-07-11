@@ -60,9 +60,6 @@ function da_boilerplate_allowed_block_types( $allowed_blocks, $post ) {
 		
 		// add our own blocks
 		'acf/accordion',
-		// 'acf/page-heading',
-		'acf/hero-image',
-		'acf/link-card',
 		);
 	}
 	// Return an array containing the allowed block types for 'page' post type
