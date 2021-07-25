@@ -1,41 +1,25 @@
 .block-project-slides {
-    margin-left: $spacing*2;
+    margin-left: 5%;
     width: 95%;
-    max-width: $bp-5;
-    height: 80vh;
+    height: 60vh;
+    display: flex;
+    overflow-x: auto;
 
-    &.owl-carousel {
+    // &::-webkit-scrollbar {// hide scrollbar
+    //     display: none;
+    // }
 
-        .owl-stage-outer {
-            height: 80vh;
-        }
+    &__item {
+        flex-shrink: 0;
+        margin-right: $spacing/2;
 
-        .owl-stage{
-            display: flex;
-            height: 100%;
-        }
+        // &--video {
 
-        .owl-item {
-            display: flex;
-            flex: 1 0 auto;
-            height: 100%;
-
-            .block-project-slides__item {
-                width: auto;
-                
-                .block-project-slides__item-wrapper {
-                    overflow: hidden;
-                    height: 100%;
-        
-                    img {
-                        object-fit: contain;
-                        height: 100%;
-                        width: auto;
-                    }
-                }
-            }
-
-        }
+        // }
     }
-    
+        
+    img {
+        height: 100%;
+        width: auto;
+    }
 }

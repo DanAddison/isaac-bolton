@@ -16,9 +16,9 @@ main.main-content > * {
 
 main.main-content > *:not(.alignwide):not(.alignfull):not(.block-project-slides) {
 //   @include center-block;
-    margin-left: $spacing*2;
-  width: 95%;
-  max-width: $bp-3;
+    margin-left: 5%;
+    width: 90%;
+    max-width: $bp-3;
 }
 
 .hidden {
