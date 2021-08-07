@@ -5,15 +5,15 @@
 
   .page-numbers {
     padding: 0.5em 0.5em;
-    color: $copy;
+    color: $dark;
 
     &:hover,
     &:focus {
-      color: $primary;
+      color: $accent;
     }
   }
 
   .page-numbers.current {
-    color: $primary;
+    color: $accent;
   }
 }

@@ -1,6 +1,7 @@
 body {
   max-width: 100%;
   overflow-x: hidden; // essential to avoid horizontal scrollbar when a child element is 100vw but the browser doesn't account for the vertical scrollbar width
+  background-color: $light;
 }
 
 main.main-content {
@@ -14,7 +15,7 @@ main.main-content > * {
   }
 }
 
-main.main-content > *:not(.alignwide):not(.alignfull):not(.block-project-slides) {
+main.main-content > *:not(.alignwide):not(.alignfull):not(.single-project__wrapper) {
 //   @include center-block;
     margin-left: 5%;
     width: 90%;

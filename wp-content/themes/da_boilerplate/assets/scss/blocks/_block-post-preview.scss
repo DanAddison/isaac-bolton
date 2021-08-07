@@ -1,5 +1,5 @@
 .post-preview {
-  background-color: rgba($white, 0.6);
+  background-color: rgba($light, 0.6);
   position: relative;
   margin-bottom: $spacing;
   margin-left: 1em;
@@ -41,7 +41,7 @@
 
 .post__excerpt {
   a {
-    color: $primary;
+    color: $accent;
   }
 }
 

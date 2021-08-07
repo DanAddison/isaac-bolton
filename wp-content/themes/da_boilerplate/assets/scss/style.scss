@@ -42,6 +42,11 @@ Tags: blocks
 // @import "layout/sidebar";
 
 /*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+@import "pages/single-project";
+
+/*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
 @import "components/menu-header";
@@ -56,7 +61,6 @@ Tags: blocks
 @import "blocks/block-accordion";
 // @import "blocks/block-post-preview";
 @import "blocks/block-project-list";
-@import "blocks/block-project-slides";
 
 /*--------------------------------------------------------------
 # Vendors: 3rd party libraries

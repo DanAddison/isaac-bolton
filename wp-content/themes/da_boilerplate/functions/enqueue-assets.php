@@ -5,10 +5,7 @@ function da_boilerplate_scripts() {
  * styles
  */
 	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/assets/compiled/style.css', array(), '1.0.0', 'all' );
-	
-	// enqueue google fonts
-	wp_enqueue_style( 'da_boilerplate-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:400,400i' );
-
+    
 	// cookie consent styles provided by https://www.osano.com/cookieconsent/download/
 	wp_enqueue_style( 'cookies-styles', 'https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css' );
 

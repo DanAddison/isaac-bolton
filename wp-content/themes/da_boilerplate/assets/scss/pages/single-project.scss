@@ -1,0 +1,94 @@
+.single-project {
+
+    &__wrapper {
+        margin-left: 5%;
+        width: 95%;
+
+        @include mq($bp-4) {
+            width: auto;
+            max-width: none;
+            display: flex;
+        }
+    }
+
+    &__content {
+        max-width: 500px;
+        margin-right: 5%;
+        margin-bottom: $spacing;
+
+        @include mq($bp-4) {
+            max-width: 400px;
+            flex-grow: 0;
+        }
+    }
+
+    &__title {
+        color: $accent;
+
+        @include mq($bp-4) {
+            margin-top: 0;
+        }
+    }
+
+    /*********************************************************
+    ## Slides
+    *********************************************************/
+    &__slides {
+        height: 60vh;
+        display: flex;
+        overflow-x: auto;
+
+        @include mq($bp-4) {
+            height: 75vh;
+            // margin-left: $spacing*2;
+        }
+    
+        &:hover,
+        &:focus {
+            cursor: ew-resize;
+        }
+    
+        &-item {
+            flex-shrink: 0;
+            margin-right: $spacing/2;
+    
+            // &--video {
+    
+            // }
+        }
+            
+        img {
+            height: 100%;
+            width: auto;
+        }
+    
+        /*********************************************************
+        ## Slides scrollbar
+        *********************************************************/
+        /* Works on Firefox */
+        scrollbar-width: thin;
+        scrollbar-color: $middle $accent;
+        
+        /* Works on Chrome, Edge, and Safari */
+        &::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+        &::-webkit-scrollbar-track {
+            background: $light;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background-color: $middle;
+            border-radius: 0;
+            border: 3px solid $light;
+        }
+        &:hover,
+        &:focus {
+    
+            &::-webkit-scrollbar-thumb {
+                background-color: $accent;
+            }
+        }
+    }
+}

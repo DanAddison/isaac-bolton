@@ -5,7 +5,7 @@
 
 .header__inner {
   @include center-block;
-  width: 95%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
 }
@@ -25,7 +25,7 @@
     text-align: center;
 
     a {
-      color: $black;
+      color: $dark;
       text-decoration: none;
     }
   }
@@ -44,6 +44,6 @@ button.menu-button {
   .hamburger-inner,
   .hamburger-inner::before,
   .hamburger-inner::after {
-    background-color: $black;
+    background-color: $dark;
   }
 }

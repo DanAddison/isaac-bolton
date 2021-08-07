@@ -1,6 +1,6 @@
 {
     "key": "group_60eab3b460119",
-    "title": "Block: Slides",
+    "title": "Project Slides",
     "fields": [
         {
             "key": "field_60eab3c7085d5",
@@ -107,9 +107,9 @@
     "location": [
         [
             {
-                "param": "block",
+                "param": "post_type",
                 "operator": "==",
-                "value": "acf\/project-slides"
+                "value": "project"
             }
         ]
     ],
@@ -121,5 +121,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1625994782
+    "modified": 1628355890
 }

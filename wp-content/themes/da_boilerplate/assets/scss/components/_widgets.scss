@@ -23,12 +23,12 @@ First, sidebar widget stylings
   }
 
   a {
-    color: $copy;
+    color: $dark;
 
     &:hover,
     &:focus {
       text-decoration: underline;
-      color: $primary;
+      color: $accent;
     }
   }
 

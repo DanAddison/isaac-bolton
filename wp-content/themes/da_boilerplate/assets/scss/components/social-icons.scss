@@ -1,7 +1,7 @@
 .social-icons {
   a {
     text-decoration: none;
-    @include links($copy);
+    @include links($dark);
   }
 
   i {

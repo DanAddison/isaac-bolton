@@ -33,11 +33,11 @@ p.has-large-font-size {
 .wp-block-quote,
 .wp-block-quote.is-style-large {
   padding: 0 2em;
-  border-left: 6px solid $primary;
+  border-left: 6px solid $accent;
   margin: 2em 0;
 
   @include mq($bp-3) {
-    margin-right: 5em;
+    margin-right: 10%;
   }
 
   p {
@@ -107,7 +107,7 @@ figure {
   display: table;
 
   &.is-style-regular td {
-    border: 1px solid $grey-lightest;
+    border: 1px solid $accent;
   }
 }
 
