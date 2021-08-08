@@ -28,12 +28,12 @@ get_header(); ?>
                 $type = get_sub_field('acf_slide_media_type');
 
                 if($type == 'image') {
-                    $image = get_sub_field('acf_slide_image');
+                    $image_id = get_sub_field('acf_slide_image');
                     $size = 'full';
                 ?>
 
                     <div class="single-project__slides-item single-project__slides-item--<?php echo $type ?>">
-                        <?php echo wp_get_attachment_image( $image, $size ); ?>
+                        <?php echo wp_get_attachment_image( $image_id, $size ); ?>
                     </div>
 
                 <?php
