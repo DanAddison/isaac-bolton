@@ -12,7 +12,7 @@
     }
 
     &__content {
-        max-width: 500px;
+        max-width: $bp-2;
         margin-right: 5%;
         margin-bottom: $spacing;
 
@@ -23,7 +23,6 @@
     }
 
     &__title {
-        color: $accent;
 
         @include mq($bp-4) {
             margin-top: 0;
@@ -40,7 +39,7 @@
 
         @include mq($bp-4) {
             height: 75vh;
-            max-height: 1000px;
+            max-height: 800px;
             // margin-left: $spacing*2;
         }
     

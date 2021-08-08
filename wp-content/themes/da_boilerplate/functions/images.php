@@ -17,7 +17,7 @@ add_action('intermediate_image_sizes_advanced', 'da_boilerplate_remove_default_i
 
 // NOTE**
 // I have changed thumbnail size to 500px in settings
-// I have used Imsanity to scale all uploaded images to maximum 1000px height
+// I have used Imsanity to scale all uploaded images to maximum 800px height
 // therefore no need for Fly Images
 
 

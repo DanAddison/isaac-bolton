@@ -15,11 +15,11 @@ main.main-content > * {
   }
 }
 
-main.main-content > *:not(.alignwide):not(.alignfull):not(.single-project__wrapper) {
+main.main-content > *:not(.alignwide):not(.alignfull):not(.single-project__wrapper):not(.block-project-list) {
 //   @include center-block;
     margin-left: 5%;
     width: 90%;
-    max-width: $bp-3;
+    max-width: $bp-2;
 }
 
 .hidden {
@@ -66,9 +66,8 @@ these classes are added to the content when they choose its alignment:
 }
 
 .alignwide {
-  @include center-block;
-  width: 100%;
-  max-width: $bp-4;
+    margin-left: 5%;
+    max-width: $bp-4;
 }
 
 .alignfull {

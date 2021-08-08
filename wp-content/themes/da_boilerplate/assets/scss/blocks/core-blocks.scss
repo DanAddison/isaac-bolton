@@ -33,7 +33,7 @@ p.has-large-font-size {
 .wp-block-quote,
 .wp-block-quote.is-style-large {
   padding: 0 2em;
-  border-left: 6px solid $accent;
+  border-left: 3px solid $accent;
   margin: 2em 0;
 
   @include mq($bp-3) {
@@ -134,6 +134,13 @@ figure {
   &.is-style-default {
     max-width: 300px;
   }
+}
+
+/*********************************************************
+## Social links block
+*********************************************************/
+.wp-social-link {
+    background-color: $accent !important;
 }
 
 /*********************************************************

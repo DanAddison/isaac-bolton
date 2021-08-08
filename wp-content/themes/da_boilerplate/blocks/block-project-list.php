@@ -11,7 +11,7 @@
         $link = get_permalink($project_id);
     ?>
 
-        <li><a href="<?php echo $link; ?>"><?php echo $text; ?></a></li>
+        <li><a href="<?php echo $link; ?>"><?php echo $text; ?><span class="icon icon-arrow-right"></span></a></li>
 
     <?php endwhile; ?>
 

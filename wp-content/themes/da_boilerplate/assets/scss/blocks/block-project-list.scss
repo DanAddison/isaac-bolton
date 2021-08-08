@@ -1,8 +1,20 @@
 .block-project-list {
     list-style: none;
+    margin-left: 5%;
+    width: 90%;
+    max-width: $bp-3;
 
     li {
-        font-size: 2rem;
-        font-family: $headings-face;
+        font-size: em(28);
+        font-family: $serif-face;
+
+        a {
+            text-decoration: none;
+
+            .icon {
+                font-size: 1.25rem;
+                margin-left: 1em;
+            }
+        }
     }
 }
