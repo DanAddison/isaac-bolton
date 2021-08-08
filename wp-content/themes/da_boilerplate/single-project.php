@@ -38,10 +38,10 @@ get_header(); ?>
 
                 <?php
                 } else {
-                    $video_url = get_sub_field('acf_slide_video');
+                    $video = get_sub_field('acf_slide_video');
                 ?>
                     <div class="single-project__slides-item single-project__slides-item--<?php echo $type ?>">
-                        <iframe src="<?php echo $video_url ?>"></iframe>
+                        <?php echo $video ?>
                     </div> 
 
                 <?php

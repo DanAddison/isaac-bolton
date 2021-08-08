@@ -33,14 +33,13 @@
     ## Slides
     *********************************************************/
     &__slides {
-        height: 60vh;
+        height: 50vw;
+        max-height: 720px;
         display: flex;
         overflow-x: auto;
 
         @include mq($bp-4) {
             height: 75vh;
-            max-height: 800px;
-            // margin-left: $spacing*2;
         }
     
         &:hover,
@@ -52,9 +51,25 @@
             flex-shrink: 0;
             margin-right: $spacing/2;
     
-            // &--video {
-    
-            // }
+            &--video {
+                display: flex;
+                align-items: center;
+                background-color: rgba($middle, .3);
+                padding: $spacing/2;
+
+                iframe {
+                    height: 45vw;
+                    width: 90vw;
+                }
+                
+                @include mq($bp-4) {
+
+                    iframe {
+                        height: 30vw;
+                        width: 50vw;
+                    }
+                }
+            }
         }
             
         img {
@@ -75,19 +90,19 @@
         }
         
         &::-webkit-scrollbar-track {
-            background: $light;
+            background: $middle;
         }
         
         &::-webkit-scrollbar-thumb {
-            background-color: $middle;
+            background-color: rgba($accent, .4);
             border-radius: 0;
-            border: 3px solid $light;
+            border: 4px solid $middle;
         }
         &:hover,
         &:focus {
     
             &::-webkit-scrollbar-thumb {
-                background-color: $accent;
+                background-color: rgba($accent, .6);
             }
         }
     }
