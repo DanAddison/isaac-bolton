@@ -17,14 +17,6 @@ if ( ! function_exists( 'da_boilerplate_setup' ) ) :
 	 */
 	function da_boilerplate_setup() {
 
-		/*
-		 * WooCommerce support
-		 */
-		// add_theme_support( 'woocommerce' );
-		// add_theme_support( 'wc-product-gallery-zoom' );
-		// add_theme_support( 'wc-product-gallery-lightbox' );
-		// add_theme_support( 'wc-product-gallery-slider' );
-
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
 
@@ -65,17 +57,6 @@ if ( ! function_exists( 'da_boilerplate_setup' ) ) :
 		 * Declare support for selective refreshing of widgets.
 		 */
 		add_theme_support( 'customize-selective-refresh-widgets' );
-
-		/**
-		 * Add support for core custom logo.
-		 * Display it anywhere with: the_custom_logo()
-		 */
-		// add_theme_support( 'custom-logo', array(
-		// 	'height'      => 250,
-		// 	'width'       => 250,
-		// 	'flex-width'  => false,
-		// 	'flex-height' => false,
-		// ) );
 	}
 endif;
 add_action( 'after_setup_theme', 'da_boilerplate_setup' );
@@ -122,11 +103,6 @@ require get_template_directory() . '/functions/template-hooks.php';
 require get_template_directory() . '/functions/template-tags.php';
 
 /**
- * ACF functions.
- */
-// require get_template_directory() . '/functions/acf.php';
-
-/**
  * register CPTs
  */
 require get_template_directory() . '/functions/cpt-project.php';
@@ -155,14 +131,3 @@ require get_template_directory() . '/functions/gutenberg-settings.php';
  * Custom ACF Gutenberg blocks
  */
 require get_template_directory() . '/functions/gutenberg-acf-blocks.php';
-
-/**
- * extend SEO Framework plugin
- */
-// require get_template_directory() . '/functions/seo-framework.php';
-
-/**
- * Implement the Custom Header feature
- */
-// require get_template_directory() . '/functions/custom-header.php';
-
