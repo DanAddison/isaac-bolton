@@ -39,7 +39,6 @@ Tags: blocks
 @import "layout/global";
 @import "layout/header";
 @import "layout/footer";
-// @import "layout/sidebar";
 
 /*--------------------------------------------------------------
 # Pages
@@ -52,15 +51,14 @@ Tags: blocks
 @import "components/menu-header";
 @import "components/social-icons";
 // @import "components/pagination";
-// @import "components/widgets";
 
 /*--------------------------------------------------------------
 # Blocks
 --------------------------------------------------------------*/
 @import "blocks/core-blocks";
 @import "blocks/block-accordion";
-// @import "blocks/block-post-preview";
 @import "blocks/block-project-list";
+// @import "blocks/block-post-preview";
 
 /*--------------------------------------------------------------
 # Vendors: 3rd party libraries
