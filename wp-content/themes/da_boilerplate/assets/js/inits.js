@@ -10,4 +10,19 @@ jQuery(function($) {
     }
   });
 
+  // Slick
+  $('.single-project__slides').slick({
+        adaptiveHeight: true,
+        infinite: true,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        slidesToShow: 1,
+        centerMode: true,
+        centerPadding: '20px',
+        variableWidth: false,
+        dots: true,
+        arrows: false,
+        lazyLoad: 'ondemand'
+    });
+
 });

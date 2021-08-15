@@ -5,8 +5,8 @@
         width: 95%;
 
         @include mq($bp-4) {
-            width: auto;
-            max-width: none;
+            // width: auto;
+            // max-width: none;
             display: flex;
         }
     }
@@ -30,80 +30,76 @@
     }
 
     /*********************************************************
-    ## Slides
+    ## Gallery slider
     *********************************************************/
-    &__slides {
-        height: 50vw;
-        max-height: 720px;
-        display: flex;
-        overflow-x: auto;
+    &__slides-wrapper {
+        width: 95%;
+        display: block;
 
         @include mq($bp-4) {
-            height: 75vh;
-        }
-    
-        &:hover,
-        &:focus {
-            cursor: ew-resize;
-        }
-    
-        &-item {
-            flex-shrink: 0;
-            margin-right: $spacing/2;
-    
-            &--video {
-                display: flex;
-                align-items: center;
-                background-color: rgba($middle, .3);
-                padding: $spacing/2;
-
-                iframe {
-                    height: 45vw;
-                    width: 90vw;
-                }
-                
-                @include mq($bp-4) {
-
-                    iframe {
-                        height: 30vw;
-                        width: 50vw;
-                    }
-                }
-            }
-        }
-            
-        img {
-            height: 100%;
-            width: auto;
-        }
-    
-        /*********************************************************
-        ## Slides scrollbar
-        *********************************************************/
-        /* Works on Firefox */
-        scrollbar-width: thin;
-        scrollbar-color: $middle $accent;
-        
-        /* Works on Chrome, Edge, and Safari */
-        &::-webkit-scrollbar {
-            width: 12px;
-        }
-        
-        &::-webkit-scrollbar-track {
-            background: $middle;
-        }
-        
-        &::-webkit-scrollbar-thumb {
-            background-color: rgba($accent, .4);
-            border-radius: 0;
-            border: 4px solid $middle;
-        }
-        &:hover,
-        &:focus {
-    
-            &::-webkit-scrollbar-thumb {
-                background-color: rgba($accent, .6);
-            }
+            width: calc(90% - 400px);
         }
     }
+    
+    &__slides {
+
+        &-item {
+            padding-left: 20px;
+            padding-right: 20px;
+            
+            > * {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            &--video {
+                height: 0;
+                padding-bottom: 60%;
+            }
+        }
+
+    }
+
+    // .slick-slide {
+    //     opacity: .5;
+
+    //     &.slick-current {
+    //         opacity: 1;
+    //     }
+    // }
+
+    //     &:hover,
+    //     &:focus {
+    //         cursor: ew-resize;
+    //     }
+    
+    //     &-item {
+    //         flex-shrink: 0;
+    //         margin-right: $spacing/2;
+    
+    //         &--video {
+    //             display: flex;
+    //             align-items: center;
+    //             background-color: rgba($middle, .3);
+    //             padding: $spacing/2;
+
+    //             iframe {
+    //                 height: 45vw;
+    //                 width: 90vw;
+    //             }
+                
+    //             @include mq($bp-4) {
+
+    //                 iframe {
+    //                     height: 30vw;
+    //                     width: 50vw;
+    //                 }
+    //             }
+    //         }
+    //     }
+            
+    //     img {
+    //         height: 100%;
+    //         width: auto;
+    //     }
 }
