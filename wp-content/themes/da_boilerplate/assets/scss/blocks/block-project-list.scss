@@ -5,9 +5,13 @@
     max-width: $bp-3;
 
     li {
-        font-size: em(28);
+        font-size: em(20);
         font-family: $serif-face;
         margin-bottom: .5em;
+
+        @include mq($bp-2) {
+            font-size: em(28);
+        }
 
         a {
             text-decoration: none;
